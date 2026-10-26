@@ -5,7 +5,7 @@ from .environment import BaseSiegeEnv
 from .core.generator import BaseSpec, generate_base
 from .core.siege_env import deployment_action, describe_action
 
-__version__ = "0.1.0rc1"
+__version__ = "0.1.0"
 __all__ = ["BaseSiegeEnv", "BaseSpec", "generate_base", "deployment_action", "describe_action"]
 
 # The simulator already owns its 300-tick terminal rule and 70-decision guard.

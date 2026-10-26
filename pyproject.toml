@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gymnasium-base-siege"
-version = "0.1.0rc1"
+version = "0.1.0"
 description = "Base Siege: a masked-action strategy environment for Gymnasium"
 readme = "README.md"
 license = "MIT"
