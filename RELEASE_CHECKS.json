@@ -1,0 +1,14 @@
+{
+  "status": "prepared-not-published",
+  "version": "0.1.0rc1",
+  "python": "3.12.14",
+  "gymnasium_1_4_0_tests": 182,
+  "gymnasium_1_3_0_tests": 182,
+  "installed_wheel_gymnasium_1_3_0_tests": 182,
+  "default_parity_attacks": 24,
+  "default_parity_decisions": 507,
+  "wheel_and_sdist_twine_check": "passed",
+  "wheel_matches_source": true,
+  "pip_check": "passed",
+  "standard_unmasked_check_env": "raises ValueError on illegal actions; masked test sampler passes"
+}

@@ -1,0 +1,5 @@
+include README.md PROVENANCE.json RELEASE_STATUS.md
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include tools *.py

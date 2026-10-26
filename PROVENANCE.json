@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/Reinforcement-Learning-UTS/base-siege-dihedrals",
+  "commit": "99cc45524aa33d0c26bdc4e48c8cc2ac1431d182",
+  "changes": "Namespaced imports; optional instance-local stat propagation in entities, pathfinding, combat and SiegeEnv; renderer accepts recorded custom ranges. Public adapter validates settings, adds action_mask/settings_hash info and Gymnasium render-mode handling. Defaults validated against original trajectories. See docs/CHANGES.md. Layout attribute renamed to base_spec to preserve Gymnasium spec metadata.",
+  "files": {
+    "env/__init__.py": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_path": "src/gymnasium_base_siege/core/__init__.py",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "env/access.py": {
+      "original_sha256": "794157695a73fe8a355d8b2db4751e794aa5fa126a717f519d75eaab4a8ab77e",
+      "packaged_path": "src/gymnasium_base_siege/core/access.py",
+      "packaged_sha256": "627e126bbebb206291ad8560f898689e6876e70d47ad6b9e1a23b07a04e77583"
+    },
+    "env/combat.py": {
+      "original_sha256": "d441c9229858c9cd7528704863529a2ec7df2ef845f7e52c727adc05e02a3921",
+      "packaged_path": "src/gymnasium_base_siege/core/combat.py",
+      "packaged_sha256": "667e6b8096e58bdc73fae1ec616fa00cb84915ba50c9d4d8a22641ee040d5328"
+    },
+    "env/config.py": {
+      "original_sha256": "fda977308e3cee1f43c66978de5c1fb381b014cb29c997503ffc0271af5aea31",
+      "packaged_path": "src/gymnasium_base_siege/core/config.py",
+      "packaged_sha256": "fda977308e3cee1f43c66978de5c1fb381b014cb29c997503ffc0271af5aea31"
+    },
+    "env/entities.py": {
+      "original_sha256": "5006a563a8ccb7e1c1682d9053764a4dcc2f3d644fdd8c95297b8fd95b4a99cc",
+      "packaged_path": "src/gymnasium_base_siege/core/entities.py",
+      "packaged_sha256": "46e7bf0eb322b4d842d62441ca0da7ca3d9c3773da32370fd7e5aecfe2e36ade"
+    },
+    "env/generator.py": {
+      "original_sha256": "945088942d036ced691459c80c9fa3ba2cf9a3557567a659beefc7e2d1b92c1c",
+      "packaged_path": "src/gymnasium_base_siege/core/generator.py",
+      "packaged_sha256": "4adb79e46ad883e0b3cb95baccf7b81c8f382de89a9eaafd0bcef11498a40c7a"
+    },
+    "env/pathfinding.py": {
+      "original_sha256": "673cbe262d45d9a3bbb9e26924907b2f259c3d569e6b0753746da500ed1ead47",
+      "packaged_path": "src/gymnasium_base_siege/core/pathfinding.py",
+      "packaged_sha256": "809278d8e3aa146c6059d1c023745d6d93f07f494476dd902573a0f3405f4520"
+    },
+    "env/render.py": {
+      "original_sha256": "f9a5b69ec923c944ac2d53ad1daf3b398ed89b4f8b8508c6c7a773ad67395dbf",
+      "packaged_path": "src/gymnasium_base_siege/core/render.py",
+      "packaged_sha256": "d6dd9fe4f95d0d49db4eb9e08664a9dc01641d6f910cb92f00f37ecd625f2b63"
+    },
+    "env/siege_env.py": {
+      "original_sha256": "d0d9172465b434d55e9b141e15eda4077b4d10b5111d37a423e1d97d1951fdf6",
+      "packaged_path": "src/gymnasium_base_siege/core/siege_env.py",
+      "packaged_sha256": "8363c87a5b5b0c7e37d82d603f685436bdc0964ebca0f223e90f4a6700686e3f"
+    },
+    "env/symmetry.py": {
+      "original_sha256": "5bdb56e396afcde63035b7ff28f391c7fe87d510e1eace240607c5c0de95192d",
+      "packaged_path": "src/gymnasium_base_siege/core/symmetry.py",
+      "packaged_sha256": "756d83469c5f101d1e67ddd2cc00e27e03ccc58a1191c1d3f4672c577aa1ff99"
+    }
+  }
+}
