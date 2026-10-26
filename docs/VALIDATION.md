@@ -55,7 +55,7 @@ test checks that registration metadata survives reset.
 
 ## Remaining release work
 
-Select a license and independent repository, configure publishing access, upload
+MIT and the independent repository have been selected. Authenticate the upload
 to TestPyPI, verify a fresh download, then publish to PyPI. Windows and macOS
 have not been tested here. No claim of Farama acceptance or public availability
 is made. All software tests used short synthetic or random attacks, not a new

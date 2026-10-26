@@ -4,18 +4,14 @@ Gymnasium does not provide a package-upload service. Publish a Python package on
 PyPI; importing it registers the environment with Gymnasium. A listing in the
 Gymnasium documentation is a separate, reviewed request.
 
-## 1. Finish release metadata
+## 1. Release metadata
 
-The source repository had no license file at the inspected commit. The owners
-must choose the license before release. After that decision, add its full text
-as LICENSE, set the SPDX `license` value and `license-files = ["LICENSE"]` under
-`[project]` in pyproject.toml, and update the release status. Do not treat this
-draft as already licensed. The public package author is Vaibhav Bairathi.
+The public package author is Vaibhav Bairathi. MIT was selected on 26 October 2026.
+The full license is in LICENSE; pyproject.toml includes `license = "MIT"` and
+`license-files = ["LICENSE"]`. The original capstone repository was not modified.
 
-Choose a separate public GitHub repository, for example
-`Reinforcement-Learning-UTS/gymnasium-base-siege`, and update package project URLs
-to the actual repository. This is a proposed location, not an existing release.
-Keep the original project link as provenance.
+The separate public repository is https://github.com/vaibhavbai1/gymnasium-base-siege.
+Package URLs point there, and the original project link remains as provenance.
 
 ## 2. Install and verify locally
 
@@ -49,9 +45,13 @@ Broaden them only after testing more versions. The wheel itself is pure Python.
 
 ## 3. Publish the separate source repository
 
-Create an empty repository through GitHub. From the same package folder run
-`git init`, `git add .`, and `git commit -m "Prepare Base Siege Gymnasium package"`.
-Follow the new repository's displayed commands to set its actual remote and push.
+The repository has been created. If this local folder is not yet a Git repository,
+run `git init`, `git branch -M main`, `git add .`, and
+`git commit -m "Prepare Base Siege Gymnasium package"` from this package folder.
+Set its origin to `https://github.com/vaibhavbai1/gymnasium-base-siege.git` with
+`git remote add origin URL`, replacing URL with that address, then run
+`git push -u origin main`. If already initialized, keep the existing Git history
+and remote: copy the updated package files into it, commit the changes and push.
 The included .gitignore excludes virtual environments and build output.
 Do not use these commands in the original capstone repository.
 

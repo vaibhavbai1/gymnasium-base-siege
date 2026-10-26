@@ -7,6 +7,8 @@ name = "gymnasium-base-siege"
 version = "0.1.0rc1"
 description = "Base Siege: a masked-action strategy environment for Gymnasium"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.12,<3.13"
 authors = [
   {name = "Vaibhav Bairathi"},

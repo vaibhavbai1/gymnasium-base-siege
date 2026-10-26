@@ -6,8 +6,10 @@ Public package author: **Vaibhav Bairathi**, Master of Artificial Intelligence,
 University of Technology Sydney. Derived from the Base Siege capstone environment;
 the upstream source and revision are recorded in `PROVENANCE.json`.
 
-**Release candidate: not yet published to PyPI.** License selection and publishing
-account setup are still required. This package is maintained independently of
+**License: MIT.** See `LICENSE`. Copyright (c) 2026 Vaibhav Bairathi.
+
+**Release candidate: not yet published to PyPI.** Upload and installation
+verification are still required. This package is maintained independently of
 Gymnasium/Farama; registration does not imply their endorsement.
 
 ## Install this source package
