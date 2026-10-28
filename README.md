@@ -16,6 +16,33 @@ An agent buys troops within a resource budget, chooses where and when to deploy 
 
 This is an independently maintained environment using the Gymnasium API. It is not an official Farama-maintained environment or an endorsed benchmark.
 
+## What does the environment look like?
+
+The board is a **16 × 16 grid**. The blue outer border contains the deployment positions. Inside the base are a Town Hall, cannons, mortars, storage buildings and walls. Green health bars shrink as buildings and troops take damage.
+
+![Four real Base Siege layouts: closed ring, north–south gates, east–west gates and layered core. A colour legend identifies buildings and walls.](https://raw.githubusercontent.com/vaibhavbai1/gymnasium-base-siege/main/docs/images/base-siege-layouts.png)
+
+These are actual simulator renderings using the default settings and layout seed `42`. The four layout types arrange walls differently; layout generation also varies building positions.
+
+### Watch an attack
+
+![Animated Base Siege attack showing troops deploying from the north border, moving towards buildings and fighting defences.](https://raw.githubusercontent.com/vaibhavbai1/gymnasium-base-siege/main/docs/images/base-siege-attack.gif)
+
+This short animation shows **one scripted attack**, using the built-in fixed army and default settings. Troops are deployed one at a time, followed by waiting while the simulator handles movement and combat. It is an illustration of the environment, not a trained-agent demonstration or a performance result. Playback is accelerated.
+
+[View a still image of the attack](https://raw.githubusercontent.com/vaibhavbai1/gymnasium-base-siege/main/docs/images/base-siege-attack.png) · [Try the related capstone web interface](https://base-siege-dihedrals.streamlit.app/)
+
+The pictures show the simulator's presentation renderer. Agents receive numerical observations, described below. The related web interface is a separate application and is not included in this package.
+
+To regenerate these images, run the following **from the repository root**, using Python 3.12:
+
+```bash
+python -m pip install -e ".[render]"
+python tools/render_readme_assets.py
+```
+
+The script saves the pictures and animation in `docs/images/`. The accompanying `render-details.json` records the package version, seeds, scripted actions and displayed ticks.
+
 ## Features
 
 - A 16 × 16 grid with procedural base layouts.
